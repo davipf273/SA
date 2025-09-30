@@ -1,0 +1,606 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title> Situação de Aprendizagem - Desenvolvimento de Sistemas</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo" onclick="showSection('home')">Situação de Aprendizagem</a>
+            <ul class="nav-links">
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('services')">Serviços</a></li>
+                <li><a onclick="showSection('algorithms')">Algoritmos</a></li>
+                <li><a onclick="showSection('electronics')">Eletrônica</a></li>
+                <li><a onclick="showSection('contact')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- HOME -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Situação de Aprendizagem</h1>
+                <p>Soluções completas em Desenvolvimento de Sistemas e Tecnologia</p>
+                <a href="#" class="btn" onclick="showSection('services')">Conheça nossos serviços</a>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h4>🚀 Desenvolvimento de Sistemas</h4>
+                    <p>Criamos soluções personalizadas para sua empresa com as mais modernas tecnologias de programação e banco de dados.</p>
+                </div>
+                <div class="card">
+                    <h4>⚡ Eletrônica Embarcada</h4>
+                    <p>Desenvolvemos sistemas Arduino e IoT para automação industrial e residencial com sensores e componentes eletrônicos.</p>
+                </div>
+                <div class="card">
+                    <h4>🔧 Algoritmos Avançados</h4>
+                    <p>Implementamos algoritmos eficientes de ordenação, busca e processamento de dados para otimizar seus processos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="services" class="section">
+            <h1>Nossos Serviços</h1>
+            
+            <h2>Linguagens de Programação</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>C++</h4>
+                    <p>Linguagem de programação de alto desempenho, ideal para sistemas embarcados, jogos e aplicações que exigem velocidade máxima. Oferece controle total sobre hardware e memória.</p>
+                </div>
+                <div class="card">
+                    <h4>JavaScript</h4>
+                    <p>Linguagem essencial para desenvolvimento web, tanto frontend quanto backend (Node.js). Permite criar interfaces interativas e aplicações web modernas e responsivas.</p>
+                </div>
+                <div class="card">
+                    <h4>Java</h4>
+                    <p>Linguagem robusta e multiplataforma, perfeita para aplicações empresariais, sistemas distribuídos e desenvolvimento Android. "Write once, run anywhere".</p>
+                </div>
+                <div class="card">
+                    <h4>Python</h4>
+                    <p>Linguagem versátil e de fácil aprendizado, excelente para ciência de dados, inteligência artificial, automação e desenvolvimento web rápido.</p>
+                </div>
+                <div class="card">
+                    <h4>PHP</h4>
+                    <p>Linguagem especializada em desenvolvimento web backend, ideal para sites dinâmicos, sistemas de gerenciamento de conteúdo e e-commerce.</p>
+                </div>
+            </div>
+
+            <h2>Tecnologias Web</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>HTML (HyperText Markup Language)</h4>
+                    <p>Linguagem de marcação que estrutura o conteúdo das páginas web. Define elementos como títulos, parágrafos, links, imagens e formulários, formando a base de qualquer site.</p>
+                </div>
+                <div class="card">
+                    <h4>CSS (Cascading Style Sheets)</h4>
+                    <p>Linguagem de estilo que controla a apresentação visual das páginas web. Define cores, fontes, layouts, animações e responsividade para diferentes dispositivos.</p>
+                </div>
+            </div>
+
+            <h2> Banco de Dados</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>MySQL</h4>
+                    <p>Sistema de gerenciamento de banco de dados relacional open-source, ideal para aplicações web de médio e grande porte. Oferece alta performance e confiabilidade.</p>
+                </div>
+                <div class="card">
+                    <h4>PostgreSQL</h4>
+                    <p>Banco de dados objeto-relacional avançado, com recursos sofisticados como tipos de dados customizados, indexação avançada e conformidade com padrões SQL.</p>
+                </div>
+                <div class="card">
+                    <h4>MongoDB</h4>
+                    <p>Banco de dados NoSQL orientado a documentos, perfeito para aplicações modernas que lidam com dados não estruturados e necessitam de escalabilidade horizontal.</p>
+                </div>
+                <div class="card">
+                    <h4>SQLite</h4>
+                    <p>Banco de dados leve e embarcado, ideal para aplicações móveis, IoT e sistemas que precisam de armazenamento local sem servidor dedicado.</p>
+                </div>
+            </div>
+
+            <h2> Ambientes de Desenvolvimento (IDEs)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Visual Studio Code</h4>
+                    <p>Editor de código gratuito e extensível da Microsoft, com suporte a múltiplas linguagens, debug integrado e vasto ecossistema de extensões.</p>
+                </div>
+                <div class="card">
+                    <h4>IntelliJ IDEA</h4>
+                    <p>IDE poderosa para desenvolvimento Java e outras linguagens JVM, com recursos avançados de refatoração, análise de código e integração com ferramentas de build.</p>
+                </div>
+                <div class="card">
+                    <h4>Arduino IDE</h4>
+                    <p>Ambiente de desenvolvimento simplificado para programação de microcontroladores Arduino, com compilador integrado e upload direto para placas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALGORITMOS -->
+        <section id="algorithms" class="section">
+            <h1>Algoritmos e Lógica Computacional</h1>
+            
+            <h2>Fluxogramas</h2>
+            <div class="card">
+                <p>Fluxogramas são representações gráficas de algoritmos que mostram o fluxo de execução de um programa através de símbolos padronizados:</p>
+                <ul style="margin: 1rem 0; padding-left: 2rem;">
+                    <li><strong>Oval:</strong> Início e fim do algoritmo</li>
+                    <li><strong>Retângulo:</strong> Processamento ou operação</li>
+                    <li><strong>Losango:</strong> Decisão ou condição</li>
+                    <li><strong>Paralelogramo:</strong> Entrada ou saída de dados</li>
+                    <li><strong>Setas:</strong> Direção do fluxo</li>
+                </ul>
+            </div>
+
+            <h2> Algoritmos Fundamentais</h2>
+            
+            <h3>Bubble Sort (Ordenação por Bolha)</h3>
+            <div class="card">
+                <p>Algoritmo simples que compara elementos adjacentes e os troca se estiverem na ordem errada:</p>
+                <div class="code-block">
+algoritmo bubbleSort
+var
+    vetor: vetor[1..10] de inteiro
+    i, j, temp, n: inteiro
+inicio
+    n := 10
+    para i de 1 ate n-1 faca
+        para j de 1 ate n-i faca
+            se vetor[j] > vetor[j+1] entao
+                temp := vetor[j]
+                vetor[j] := vetor[j+1]
+                vetor[j+1] := temp
+            fimse
+        fimpara
+    fimpara
+fim
+                </div>
+            </div>
+
+            <h3>Busca Linear</h3>
+            <div class="card">
+                <p>Percorre sequencialmente cada elemento até encontrar o valor procurado:</p>
+                <div class="code-block">
+algoritmo buscaLinear
+var
+    vetor: vetor[1..10] de inteiro
+    valor, i: inteiro
+    encontrado: logico
+inicio
+    encontrado := falso
+    para i de 1 ate 10 faca
+        se vetor[i] = valor entao
+            encontrado := verdadeiro
+            escreva("Valor encontrado na posição ", i)
+        fimse
+    fimpara
+    se nao encontrado entao
+        escreva("Valor não encontrado")
+    fimse
+fim
+                </div>
+            </div>
+
+            <h3>Busca Binária</h3>
+            <div class="card">
+                <p>Algoritmo eficiente para vetores ordenados que divide pela metade a cada iteração:</p>
+                <div class="code-block">
+algoritmo buscaBinaria
+var
+    vetor: vetor[1..10] de inteiro
+    valor, inicio, fim, meio: inteiro
+    encontrado: logico
+inicio
+    inicio := 1
+    fim := 10
+    encontrado := falso
+    
+    enquanto inicio <= fim e nao encontrado faca
+        meio := (inicio + fim) div 2
+        se vetor[meio] = valor entao
+            encontrado := verdadeiro
+            escreva("Valor encontrado na posição ", meio)
+        senao
+            se valor < vetor[meio] entao
+                fim := meio - 1
+            senao
+                inicio := meio + 1
+            fimse
+        fimse
+    fimenquanto
+fim
+                </div>
+            </div>
+
+            <h2> Conceitos Fundamentais</h2>
+            
+            <h3>Portugol e Portugol Studio</h3>
+            <div class="card">
+                <p><strong>Portugol</strong> é uma pseudolinguagem que utiliza português estruturado para ensinar lógica de programação. É uma ponte entre o pensamento humano e as linguagens de programação reais.</p>
+                <p><strong>Portugol Studio</strong> é um ambiente de desenvolvimento integrado (IDE) que permite escrever, executar e depurar algoritmos em Portugol, facilitando o aprendizado de programação.</p>
+            </div>
+
+            <h3>Variáveis e Constantes</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Variáveis</h4>
+                    <p>Espaços de memória que armazenam dados que podem ser modificados durante a execução do programa. Exemplo: idade, nome, contador.</p>
+                </div>
+                <div class="card">
+                    <h4>Constantes</h4>
+                    <p>Valores fixos que não se alteram durante a execução. Exemplo: PI = 3.14159, TAXA_JUROS = 0.05.</p>
+                </div>
+            </div>
+
+            <h3>Tipos de Dados</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Inteiro</h4>
+                    <p>Números sem casas decimais: -100, 0, 42, 1000</p>
+                </div>
+                <div class="card">
+                    <h4>Real</h4>
+                    <p>Números com casas decimais: 3.14, -2.5, 0.001</p>
+                </div>
+                <div class="card">
+                    <h4>Caracter</h4>
+                    <p>Um único caracter: 'A', 'x', '5', '@'</p>
+                </div>
+                <div class="card">
+                    <h4>Cadeia (String)</h4>
+                    <p>Sequência de caracteres: "Hello World", "Davi"</p>
+                </div>
+                <div class="card">
+                    <h4>Lógico (Boolean)</h4>
+                    <p>Valores verdadeiro ou falso: verdadeiro, falso</p>
+                </div>
+                <div class="card">
+                    <h4>Vetor</h4>
+                    <p>Conjunto de elementos do mesmo tipo: [1,2,3,4,5]</p>
+                </div>
+            </div>
+
+            <h2>     Exemplos Práticos em JavaScript</h2>
+            
+            <h3>Script para Ordenação de Números</h3>
+            <div class="card">
+                <div class="code-block">
+// Ordenação de números de 1 a 20
+let numeros = [];
+for(let i = 1; i <= 20; i++) {
+    numeros.push(i);
+}
+
+// Ordem crescente (já está)
+console.log("Crescente:", numeros);
+
+// Ordem decrescente
+let decrescente = [...numeros].reverse();
+console.log("Decrescente:", decrescente);
+
+// 10 números aleatórios de 1 a 20
+let aleatorios = [];
+for(let i = 0; i < 10; i++) {
+    aleatorios.push(Math.floor(Math.random() * 20) + 1);
+}
+aleatorios.sort((a, b) => a - b);
+console.log("10 números aleatórios ordenados:", aleatorios);
+                </div>
+            </div>
+
+            <h3>Soma de Array e Matriz</h3>
+            <div class="card">
+                <div class="code-block">
+// Somar 10 números aleatórios de 1 a 220
+let numeros = [];
+let soma = 0;
+for(let i = 0; i < 10; i++) {
+    let num = Math.floor(Math.random() * 220) + 1;
+    numeros.push(num);
+    soma += num;
+}
+console.log("Números:", numeros);
+console.log("Soma:", soma);
+
+// Matriz 3x3 com números aleatórios de 1 a 20
+let matriz = [];
+for(let i = 0; i < 3; i++) {
+    matriz[i] = [];
+    for(let j = 0; j < 3; j++) {
+        matriz[i][j] = Math.floor(Math.random() * 20) + 1;
+    }
+}
+console.log("Matriz 3x3:", matriz);
+                </div>
+            </div>
+
+            <h3>Calculadoras Práticas</h3>
+            <div class="card">
+                <div class="code-block">
+// Calculadora de IMC
+function calcularIMC(peso, altura) {
+    let imc = peso / (altura * altura);
+    let categoria;
+    
+    if(imc < 18.5) categoria = "Abaixo do peso";
+    else if(imc < 25) categoria = "Peso normal";
+    else if(imc < 30) categoria = "Sobrepeso";
+    else categoria = "Obesidade";
+    
+    return {imc: imc.toFixed(2), categoria};
+}
+
+// Conversor de Temperatura
+function celsiusParaFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+function fahrenheitParaCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5/9;
+}
+
+// Exemplos
+console.log("IMC (70kg, 1.75m):", calcularIMC(70, 1.75));
+console.log("25°C em Fahrenheit:", celsiusParaFahrenheit(25) + "°F");
+console.log("77°F em Celsius:", fahrenheitParaCelsius(77) + "°C");
+                </div>
+            </div>
+        </section>
+
+        <!-- ELETRÔNICA -->
+        <section id="electronics" class="section">
+            <h1>Componentes Eletrônicos e Sistemas</h1>
+            
+            <h2> Componentes Eletrônicos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4> Resistor</h4>
+                    <p>Componente que limita a passagem de corrente elétrica. Usado para controlar tensão, dividir corrente e proteger circuitos. Medido em Ohms (Ω).</p>
+                </div>
+                <div class="card">
+                    <h4> Diodo LED</h4>
+                    <p>Diodo emissor de luz que converte energia elétrica em luz. Amplamente usado em indicadores, iluminação e displays. Possui polaridade definida (anodo e catodo).</p>
+                </div>
+                <div class="card">
+                    <h4> Transistor</h4>
+                    <p>Dispositivo semicondutor usado como interruptor eletrônico ou amplificador. Tipos principais: BJT (bipolar) e FET (efeito de campo).</p>
+                </div>
+                <div class="card">
+                    <h4> Circuito Integrado</h4>
+                    <p>Chip que contém milhares ou milhões de componentes miniaturizados. Exemplos: microprocessadores, memórias, amplificadores operacionais.</p>
+                </div>
+            </div>
+
+            <h2> Sensores para Automação</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4> Sensor de Temperatura</h4>
+                    <p>Mede temperatura ambiente. Tipos: DS18B20 (digital), LM35 (analógico), DHT22. Aplicações: controle climático, monitoramento industrial.</p>
+                </div>
+                <div class="card">
+                    <h4> Sensor de Umidade</h4>
+                    <p>Detecta umidade do ar ou solo. DHT22 para ar, sensores capacitivos para solo. Usado em estufas, irrigação automática, climatização.</p>
+                </div>
+                <div class="card">
+                    <h4> Sensor de Luminosidade</h4>
+                    <p>LDR (Light Dependent Resistor) ou fotodiodos. Aplicações: iluminação automática, painéis solares, sistemas de segurança.</p>
+                </div>
+                <div class="card">
+                    <h4>Sensor de Movimento</h4>
+                    <p>PIR (Passive Infrared) detecta movimento por calor corporal. Usado em sistemas de segurança, iluminação automática, contadores de pessoas.</p>
+                </div>
+            </div>
+
+            <h2> Arduino - Eletrônica Embarcada</h2>
+            
+            <h3>O que é Arduino?</h3>
+            <div class="card">
+                <p>Arduino é uma plataforma de prototipagem eletrônica open-source baseada em hardware e software flexíveis e fáceis de usar. Consiste em uma placa de circuito com microcontrolador e um ambiente de desenvolvimento para programação.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Para que serve?</h4>
+                <ul style="margin: 1rem 0; padding-left: 2rem;">
+                    <li>Automação residencial (controle de luzes, temperatura)</li>
+                    <li>Robótica e projetos educacionais</li>
+                    <li>IoT (Internet das Coisas) - sensores conectados</li>
+                    <li>Instrumentação e aquisição de dados</li>
+                    <li>Arte interativa e instalações</li>
+                </ul>
+
+                <h4>Vantagens:</h4>
+                <ul style="margin: 1rem 0; padding-left: 2rem;">
+                    <li> Fácil aprendizado e uso</li>
+                    <li> Grande comunidade e documentação</li>
+                    <li> Baixo custo e disponibilidade</li>
+                    <li> Multiplataforma (Windows, Mac, Linux)</li>
+                </ul>
+
+                <h4>Desvantagens:</h4>
+                <ul style="margin: 1rem 0; padding-left: 2rem;">
+                    <li> Processamento limitado comparado a computadores</li>
+                    <li> Memória restrita para projetos complexos</li>
+                    <li> Não é ideal para aplicações em tempo real crítico</li>
+                </ul>
+            </div>
+
+            <h3>Como funciona o Arduino?</h3>
+            <div class="card">
+                <p>O Arduino funciona através de um <span class="highlight">microcontrolador</span> (geralmente ATmega328P) que executa código carregado via USB. O programa é escrito em C++ simplificado e compilado antes do upload.</p>
+                
+                <p><strong>Eletrônica Embarcada</strong> é um sistema computacional dedicado projetado para executar tarefas específicas, integrado ao hardware que controla. Diferente de computadores gerais, sistemas embarcados são otimizados para funções particulares.</p>
+            </div>
+
+            <h3>Linguagem de Programação</h3>
+            <div class="card">
+                <p>O Arduino usa uma versão simplificada de <strong>C++</strong>, com bibliotecas específicas que facilitam o controle de hardware. A IDE Arduino abstrai muitas complexidades, tornando a programação acessível.</p>
+                
+                <div class="code-block">
+// Exemplo básico: Piscar LED
+void setup() {
+  pinMode(13, OUTPUT);  // Configura pino 13 como saída
+}
+
+void loop() {
+  digitalWrite(13, HIGH);  // Liga LED
+  delay(1000);            // Espera 1 segundo
+  digitalWrite(13, LOW);   // Desliga LED
+  delay(1000);            // Espera 1 segundo
+}
+                </div>
+            </div>
+
+            <h3>Entradas e Saídas</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4> Entradas/Saídas Digitais</h4>
+                    <p>Trabalham apenas com dois estados: HIGH (5V) e LOW (0V). Usado para:</p>
+                    <ul style="padding-left: 1.5rem;">
+                        <li>LEDs (saída)</li>
+                        <li>Botões (entrada)</li>
+                        <li>Relés (saída)</li>
+                        <li>Sensores digitais</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Entradas/Saídas Analógicas</h4>
+                    <p>Trabalham com valores contínuos de 0 a 1023 (10 bits). Usado para:</p>
+                    <ul style="padding-left: 1.5rem;">
+                        <li>Sensores de temperatura</li>
+                        <li>Potenciômetros</li>
+                        <li>Sensores de luz (LDR)</li>
+                        <li>Controle PWM para motores</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Cálculos e Scripts Eletrônicos</h2>
+        
+            <h3>Lei de Ohm</h3>
+            <div class="card">
+                <p>A Lei de Ohm estabelece que V = I × R, onde V é tensão (Volts), I é corrente (Ampères) e R é resistência (Ohms).</p>
+                <div class="code-block">
+// Calculadora Lei de Ohm
+function calcularTensao(corrente, resistencia) {
+    return corrente * resistencia;
+}
+
+function calcularCorrente(tensao, resistencia) {
+    return tensao / resistencia;
+}
+
+function calcularResistencia(tensao, corrente) {
+    return tensao / corrente;
+}
+
+// Exemplos
+console.log("Tensão (2A, 10Ω):", calcularTensao(2, 10) + "V");
+console.log("Corrente (12V, 4Ω):", calcularCorrente(12, 4) + "A");
+console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω");
+                </div>
+            </div>
+
+            <h3>Cálculo de Potência</h3>
+            <div class="card">
+                <p>Potência elétrica pode ser calculada usando P = V × I, P = V²/R ou P = I² × R</p>
+                <div class="code-block">
+// Calculadora de Potência
+function potenciaTensaoCorrente(tensao, corrente) {
+    return tensao * corrente;
+}
+
+function potenciaTensaoResistencia(tensao, resistencia) {
+    return (tensao * tensao) / resistencia;
+}
+
+function potenciaCorrenteResistencia(corrente, resistencia) {
+    return corrente * corrente * resistencia;
+}
+
+// Exemplo: Lâmpada de 12V, 2A
+let tensao = 12, corrente = 2;
+console.log("Potência:", potenciaTensaoCorrente(tensao, corrente) + "W");
+                </div>
+            </div>
+
+            <h3>Programa Arduino - Leitura de Sensor Analógico</h3>
+            <div class="card">
+                <div class="code-block">
+
+                </div>
+            </div>
+
+            <h2> Componentes de Rede e Servidores</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4> Servidores Web</h4>
+                    <p>Computadores dedicados que hospedam sites e aplicações. Exemplos: Apache, Nginx, IIS. Características: alta disponibilidade, processamento robusto, armazenamento redundante.</p>
+                </div>
+                <div class="card">
+                    <h4> Switch de Rede</h4>
+                    <p>Dispositivo que conecta múltiplos dispositivos em rede local (LAN). Gerencia tráfego de dados usando endereços MAC, criando domínios de colisão separados.</p>
+                </div>
+                <div class="card">
+                    <h4> Roteador</h4>
+                    <p>Equipamento que conecta diferentes redes, direcionando pacotes de dados. Implementa NAT, DHCP, firewall e Wi-Fi em modelos residenciais.</p>
+                </div>
+                <div class="card">
+                    <h4> Firewall</h4>
+                    <p>Sistema de segurança que monitora e controla tráfego de rede baseado em regras predefinidas. Pode ser hardware dedicado ou software.</p>
+                </div>
+                <div class="card">
+                    <h4> Dispositivos IoT</h4>
+                    <p>Dispositivos conectados à internet: câmeras IP, sensores inteligentes, termostatos, lâmpadas smart. Comunicam via Wi-Fi, Bluetooth, Zigbee.</p>
+                </div>
+                <div class="card">
+                    <h4> NAS (Network Attached Storage)</h4>
+                    <p>Servidor de armazenamento dedicado conectado à rede. Permite compartilhamento centralizado de arquivos, backup automático e acesso remoto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contact" class="section">
+            <h1>Entre em Contato</h1>
+            <div class="hero" style="margin: 0 0 3rem 0;">
+                <h2 style="color: white; font-size: 2rem;"></h2>
+                <p>Transformando ideias em soluções tecnológicas</p>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h4> </h4>
+                    
+                </div>
+                <div class="card">
+                    <h4> Telefone</h4>
+                    <p><br>
+                    WhatsApp: </p>
+                </div>
+                <div class="card">
+                    <h4> E-mail</h4>
+                    <p>
+                    </p>
+                </div>
+                <div class="card">
+                    <h4> Redes Sociais</h4>
+                    <p></p>
+                </div>
+            </div>
+           
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Situação de Aprendizagem</div>
+                <p>&copy; Davi </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
