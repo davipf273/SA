@@ -144,22 +144,22 @@
             <div class="card">
                 <p>Algoritmo simples que compara elementos adjacentes e os troca se estiverem na ordem errada:</p>
                 <div class="code-block">
-algoritmo bubbleSort
-var
-    vetor: vetor[1..10] de inteiro
-    i, j, temp, n: inteiro
-inicio
-    n := 10
-    para i de 1 ate n-1 faca
-        para j de 1 ate n-i faca
-            se vetor[j] > vetor[j+1] entao
-                temp := vetor[j]
-                vetor[j] := vetor[j+1]
-                vetor[j+1] := temp
-            fimse
-        fimpara
-    fimpara
-fim
+        <!-- algoritmo bubbleSort
+        var
+            vetor: vetor[1..10] de inteiro
+            i, j, temp, n: inteiro
+        inicio
+            n := 10
+            para i de 1 ate n-1 faca
+                para j de 1 ate n-i faca
+                    se vetor[j] > vetor[j+1] entao
+                        temp := vetor[j]
+                        vetor[j] := vetor[j+1]
+                        vetor[j+1] := temp
+                    fimse
+                fimpara
+            fimpara
+        fim -->
                 </div>
             </div>
 
@@ -167,7 +167,7 @@ fim
             <div class="card">
                 <p>Percorre sequencialmente cada elemento até encontrar o valor procurado:</p>
                 <div class="code-block">
-algoritmo buscaLinear
+<!-- algoritmo buscaLinear
 var
     vetor: vetor[1..10] de inteiro
     valor, i: inteiro
@@ -183,7 +183,7 @@ inicio
     se nao encontrado entao
         escreva("Valor não encontrado")
     fimse
-fim
+fim -->
                 </div>
             </div>
 
@@ -191,7 +191,7 @@ fim
             <div class="card">
                 <p>Algoritmo eficiente para vetores ordenados que divide pela metade a cada iteração:</p>
                 <div class="code-block">
-algoritmo buscaBinaria
+<!-- algoritmo buscaBinaria
 var
     vetor: vetor[1..10] de inteiro
     valor, inicio, fim, meio: inteiro
@@ -214,7 +214,7 @@ inicio
             fimse
         fimse
     fimenquanto
-fim
+fim -->
                 </div>
             </div>
 
@@ -271,7 +271,7 @@ fim
             <h3>Script para Ordenação de Números</h3>
             <div class="card">
                 <div class="code-block">
-// Ordenação de números de 1 a 20
+<!-- // Ordenação de números de 1 a 20
 let numeros = [];
 for(let i = 1; i <= 20; i++) {
     numeros.push(i);
@@ -290,14 +290,14 @@ for(let i = 0; i < 10; i++) {
     aleatorios.push(Math.floor(Math.random() * 20) + 1);
 }
 aleatorios.sort((a, b) => a - b);
-console.log("10 números aleatórios ordenados:", aleatorios);
+console.log("10 números aleatórios ordenados:", aleatorios); -->
                 </div>
             </div>
 
             <h3>Soma de Array e Matriz</h3>
             <div class="card">
                 <div class="code-block">
-// Somar 10 números aleatórios de 1 a 220
+<!-- // Somar 10 números aleatórios de 1 a 220
 let numeros = [];
 let soma = 0;
 for(let i = 0; i < 10; i++) {
@@ -316,14 +316,14 @@ for(let i = 0; i < 3; i++) {
         matriz[i][j] = Math.floor(Math.random() * 20) + 1;
     }
 }
-console.log("Matriz 3x3:", matriz);
+console.log("Matriz 3x3:", matriz); -->
                 </div>
             </div>
 
             <h3>Calculadoras Práticas</h3>
             <div class="card">
                 <div class="code-block">
-// Calculadora de IMC
+<!-- // Calculadora de IMC
 function calcularIMC(peso, altura) {
     let imc = peso / (altura * altura);
     let categoria;
@@ -348,7 +348,7 @@ function fahrenheitParaCelsius(fahrenheit) {
 // Exemplos
 console.log("IMC (70kg, 1.75m):", calcularIMC(70, 1.75));
 console.log("25°C em Fahrenheit:", celsiusParaFahrenheit(25) + "°F");
-console.log("77°F em Celsius:", fahrenheitParaCelsius(77) + "°C");
+console.log("77°F em Celsius:", fahrenheitParaCelsius(77) + "°C"); -->
                 </div>
             </div>
         </section>
@@ -440,7 +440,7 @@ console.log("77°F em Celsius:", fahrenheitParaCelsius(77) + "°C");
                 <p>O Arduino usa uma versão simplificada de <strong>C++</strong>, com bibliotecas específicas que facilitam o controle de hardware. A IDE Arduino abstrai muitas complexidades, tornando a programação acessível.</p>
                 
                 <div class="code-block">
-// Exemplo básico: Piscar LED
+<!-- // Exemplo básico: Piscar LED
 void setup() {
   pinMode(13, OUTPUT);  // Configura pino 13 como saída
 }
@@ -450,7 +450,7 @@ void loop() {
   delay(1000);            // Espera 1 segundo
   digitalWrite(13, LOW);   // Desliga LED
   delay(1000);            // Espera 1 segundo
-}
+} -->
                 </div>
             </div>
 
@@ -484,7 +484,7 @@ void loop() {
             <div class="card">
                 <p>A Lei de Ohm estabelece que V = I × R, onde V é tensão (Volts), I é corrente (Ampères) e R é resistência (Ohms).</p>
                 <div class="code-block">
-// Calculadora Lei de Ohm
+<!-- // Calculadora Lei de Ohm
 function calcularTensao(corrente, resistencia) {
     return corrente * resistencia;
 }
@@ -500,7 +500,7 @@ function calcularResistencia(tensao, corrente) {
 // Exemplos
 console.log("Tensão (2A, 10Ω):", calcularTensao(2, 10) + "V");
 console.log("Corrente (12V, 4Ω):", calcularCorrente(12, 4) + "A");
-console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω");
+console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω"); -->
                 </div>
             </div>
 
@@ -508,8 +508,8 @@ console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω");
             <div class="card">
                 <p>Potência elétrica pode ser calculada usando P = V × I, P = V²/R ou P = I² × R</p>
                 <div class="code-block">
-// Calculadora de Potência
-function potenciaTensaoCorrente(tensao, corrente) {
+<!-- // Calculadora de Potência
+ function potenciaTensaoCorrente(tensao, corrente) {
     return tensao * corrente;
 }
 
@@ -524,7 +524,7 @@ function potenciaCorrenteResistencia(corrente, resistencia) {
 // Exemplo: Lâmpada de 12V, 2A
 let tensao = 12, corrente = 2;
 console.log("Potência:", potenciaTensaoCorrente(tensao, corrente) + "W");
-                </div>
+                </div> --> -->
             </div>
 
             <h3>Programa Arduino - Leitura de Sensor Analógico</h3>
