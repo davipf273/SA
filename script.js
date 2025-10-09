@@ -18,26 +18,6 @@ function showSection(sectionId) {
     }
 }
 
-// Efeito de digitação no título principal
-document.addEventListener('DOMContentLoaded', function() {
-    const title = document.querySelector('.hero h1');
-    if (title && title.textContent === 'TechSolutions®') {
-        const text = title.textContent;
-        title.textContent = '';
-        let i = 0;
-        
-        const typeWriter = () => {
-            if (i < text.length) {
-                title.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 150);
-            }
-        };
-        
-        setTimeout(typeWriter, 500);
-    }
-});
-
 // Adiciona interatividade aos cards
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
