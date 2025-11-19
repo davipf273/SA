@@ -6,7 +6,7 @@ function showSection(sectionId) {
     });
     
     // Mostra a seção selecionada
-    const targetSection = document.getElementById(sectionId);
+    const targetSection = document.getElementById(sectionId); // nunca mais fazer isso talvez foi chatinho de aprender porem fica mais facil de 
     if (targetSection) {
         targetSection.classList.add('active');
         
@@ -31,6 +31,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
 
 
