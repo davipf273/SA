@@ -12,7 +12,7 @@ try {
 visor.textContent = eval(operacaoAtual);
 operacaoAtual = visor.textContent; // Armazena o resultado para continuar cálculos
 } catch {
-visor.textContent = "Erro";
+visor.textContent = "Erro"; // mostra que deu erro no calculo ou o numero é muito grande para ser mostrado
 operacaoAtual = "";
 }
 } else if (valor === "C") {
