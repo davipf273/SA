@@ -13,21 +13,21 @@
             <a href="#" class="logo" onclick="showSection('home')">Situação de Aprendizagem</a>
             <ul class="nav-links">
                 <li><a onclick="showSection('home')">Home</a></li>
-                <li><a onclick="showSection('services')">Serviços</a></li>
-                <li><a onclick="showSection('algorithms')">Algoritmos</a></li>
-                <li><a onclick="showSection('electronics')">Eletrônica</a></li>
-                <li><a onclick="showSection('contact')">Contato</a></li>
+                <li><a onclick="showSection('servicos')">Serviços</a></li>
+                <li><a onclick="showSection('algoritmos')">Algoritmos</a></li>
+                <li><a onclick="showSection('eletronica')">Eletrônica</a></li>
+                <li><a onclick="showSection('contato')">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <main class="container">
         <!-- HOME -->
-        <section id="home" class="section active">
+        <section id="home" class="section active"> <!-- vai pegar o id da sessão e vai mostrar na tela -->
             <div class="hero">
                 <h1>Situação de Aprendizagem</h1>
                 <p>Soluções completas em Desenvolvimento de Sistemas e Tecnologia</p>
-                <a href="#" class="btn" onclick="showSection('services')">Conheça nossos serviços</a>
+                <a href="#" class="btn" onclick="showSection('servicos')">Conheça nossos serviços</a>
             </div>
             
             <div class="grid">
@@ -47,8 +47,8 @@
         </section>
 
         <!-- SERVIÇOS -->
-        <section id="services" class="section">
-            <h1>Nossos Serviços</h1>
+        <section id="servicos" class="section"><!-- vai pegar o id da sessão e vai mostrar na tela -->
+            <h1>Nossos Serviços</h1> 
             
             <h2>Linguagens de Programação</h2>
             <div class="grid">
@@ -124,7 +124,7 @@
         </section>
 
         <!-- ALGORITMOS -->
-        <section id="algorithms" class="section">
+        <section id="algoritmos" class="section"> <!-- vai pegar o id da sessão e vai mostrar na tela -->
             <h1>Algoritmos e Lógica Computacional</h1>
             
             <h2>Fluxogramas</h2>
@@ -145,22 +145,25 @@
             <div class="card">
                 <p>Algoritmo simples que compara elementos adjacentes e os troca se estiverem na ordem errada:</p>
                 <div class="code-block">
-        <!-- algoritmo bubbleSort
-        var
-            vetor: vetor[1..10] de inteiro
-            i, j, temp, n: inteiro
-        inicio
-            n := 10
-            para i de 1 ate n-1 faca
-                para j de 1 ate n-i faca
-                    se vetor[j] > vetor[j+1] entao
-                        temp := vetor[j]
-                        vetor[j] := vetor[j+1]
-                        vetor[j+1] := temp
-                    fimse
-                fimpara
-            fimpara
-        fim -->
+                    <pre>
+                        algoritmo bubbleSort
+                        var
+                            vetor: vetor[1..10] de inteiro
+                            i, j, temp, n: inteiro
+                        inicio
+                            n := 10
+                            para i de 1 ate n-1 faca
+                                para j de 1 ate n-i faca
+                                    se vetor[j] > vetor[j+1] entao
+                                        temp := vetor[j]
+                                        vetor[j] := vetor[j+1]
+                                        vetor[j+1] := temp
+                                    fimse
+                                fimpara
+                            fimpara
+                        fim
+                    </pre>
+       
                 </div>
             </div>
 
@@ -168,23 +171,26 @@
             <div class="card">
                 <p>Percorre sequencialmente cada elemento até encontrar o valor procurado:</p>
                 <div class="code-block">
-<!-- algoritmo buscaLinear
-var
-    vetor: vetor[1..10] de inteiro
-    valor, i: inteiro
-    encontrado: logico
-inicio
-    encontrado := falso
-    para i de 1 ate 10 faca
-        se vetor[i] = valor entao
-            encontrado := verdadeiro
-            escreva("Valor encontrado na posição ", i)
-        fimse
-    fimpara
-    se nao encontrado entao
-        escreva("Valor não encontrado")
-    fimse
-fim -->
+                    <pre>
+                        algoritmo buscaLinear
+                        var
+                            vetor: vetor[1..10] de inteiro
+                            valor, i: inteiro
+                            encontrado: logico
+                        inicio
+                            encontrado := falso
+                            para i de 1 ate 10 faca
+                                se vetor[i] = valor entao
+                                    encontrado := verdadeiro
+                                    escreva("Valor encontrado na posição ", i)
+                                fimse
+                            fimpara
+                            se nao encontrado entao
+                                escreva("Valor não encontrado")
+                            fimse
+                        fim
+                    </pre>
+
                 </div>
             </div>
 
@@ -192,30 +198,33 @@ fim -->
             <div class="card">
                 <p>Algoritmo eficiente para vetores ordenados que divide pela metade a cada iteração:</p>
                 <div class="code-block">
-<!-- algoritmo buscaBinaria
-var
-    vetor: vetor[1..10] de inteiro
-    valor, inicio, fim, meio: inteiro
-    encontrado: logico
-inicio
-    inicio := 1
-    fim := 10
-    encontrado := falso
-    
-    enquanto inicio <= fim e nao encontrado faca
-        meio := (inicio + fim) div 2
-        se vetor[meio] = valor entao
-            encontrado := verdadeiro
-            escreva("Valor encontrado na posição ", meio)
-        senao
-            se valor < vetor[meio] entao
-                fim := meio - 1
-            senao
-                inicio := meio + 1
-            fimse
-        fimse
-    fimenquanto
-fim -->
+                    <pre>
+                        algoritmo buscaBinaria
+                        var
+                            vetor: vetor[1..10] de inteiro
+                            valor, inicio, fim, meio: inteiro
+                            encontrado: logico
+                        inicio
+                            inicio := 1
+                            fim := 10
+                            encontrado := falso
+                            
+                            enquanto inicio <= fim e nao encontrado faca
+                                meio := (inicio + fim) div 2
+                                se vetor[meio] = valor entao
+                                    encontrado := verdadeiro
+                                    escreva("Valor encontrado na posição ", meio)
+                                senao
+                                    se valor < vetor[meio] entao
+                                        fim := meio - 1
+                                    senao
+                                        inicio := meio + 1
+                                    fimse
+                                fimse
+                            fimenquanto
+                        fim
+                    </pre>
+
                 </div>
             </div>
 
@@ -272,52 +281,58 @@ fim -->
             <h3>Script para Ordenação de Números</h3>
             <div class="card">
                 <div class="code-block">
-<!-- // Ordenação de números de 1 a 20
-let numeros = [];
-for(let i = 1; i <= 20; i++) {
-    numeros.push(i);
-}
+                    <pre>
+                        // Ordenação de números de 1 a 20
+                        let numeros = [];
+                        for(let i = 1; i <= 20; i++) {
+                            numeros.push(i);
+                        }
+                        
+                        // Ordem crescente (já está)
+                        console.log("Crescente:", numeros);
+                        
+                        // Ordem decrescente
+                        let decrescente = [...numeros].reverse();
+                        console.log("Decrescente:", decrescente);
+                        
+                        // 10 números aleatórios de 1 a 20
+                        let aleatorios = [];
+                        for(let i = 0; i < 10; i++) {
+                            aleatorios.push(Math.floor(Math.random() * 20) + 1);
+                        }
+                        aleatorios.sort((a, b) => a - b);
+                        console.log("10 números aleatórios ordenados:", aleatorios);
+                    </pre>
 
-// Ordem crescente (já está)
-console.log("Crescente:", numeros);
-
-// Ordem decrescente
-let decrescente = [...numeros].reverse();
-console.log("Decrescente:", decrescente);
-
-// 10 números aleatórios de 1 a 20
-let aleatorios = [];
-for(let i = 0; i < 10; i++) {
-    aleatorios.push(Math.floor(Math.random() * 20) + 1);
-}
-aleatorios.sort((a, b) => a - b);
-console.log("10 números aleatórios ordenados:", aleatorios); -->
                 </div>
             </div>
 
             <h3>Soma de Array e Matriz</h3>
             <div class="card">
                 <div class="code-block">
-<!-- // Somar 10 números aleatórios de 1 a 220
-let numeros = [];
-let soma = 0;
-for(let i = 0; i < 10; i++) {
-    let num = Math.floor(Math.random() * 220) + 1;
-    numeros.push(num);
-    soma += num;
-}
-console.log("Números:", numeros);
-console.log("Soma:", soma);
+                    <pre>
+                        // Somar 10 números aleatórios de 1 a 220
+                        let numeros = [];
+                        let soma = 0;
+                        for(let i = 0; i < 10; i++) {
+                            let num = Math.floor(Math.random() * 220) + 1;
+                            numeros.push(num);
+                            soma += num;
+                        }
+                        console.log("Números:", numeros);
+                        console.log("Soma:", soma);
+                        
+                        // Matriz 3x3 com números aleatórios de 1 a 20
+                        let matriz = [];
+                        for(let i = 0; i < 3; i++) {
+                            matriz[i] = [];
+                            for(let j = 0; j < 3; j++) {
+                                matriz[i][j] = Math.floor(Math.random() * 20) + 1;
+                            }
+                        }
+                        console.log("Matriz 3x3:", matriz);
+                    </pre>
 
-// Matriz 3x3 com números aleatórios de 1 a 20
-let matriz = [];
-for(let i = 0; i < 3; i++) {
-    matriz[i] = [];
-    for(let j = 0; j < 3; j++) {
-        matriz[i][j] = Math.floor(Math.random() * 20) + 1;
-    }
-}
-console.log("Matriz 3x3:", matriz); -->
                 </div>
             </div>
 
@@ -349,7 +364,7 @@ console.log("Matriz 3x3:", matriz); -->
         </section>
 
         <!-- ELETRÔNICA -->
-        <section id="electronics" class="section">
+        <section id="eletronica" class="section"> <!-- vai pegar o id da sessão e vai mostrar na tela -->
             <h1>Componentes Eletrônicos e Sistemas</h1>
             
             <h2> Componentes Eletrônicos</h2>
@@ -435,17 +450,20 @@ console.log("Matriz 3x3:", matriz); -->
                 <p>O Arduino usa uma versão simplificada de <strong>C++</strong>, com bibliotecas específicas que facilitam o controle de hardware. A IDE Arduino abstrai muitas complexidades, tornando a programação acessível.</p>
                 
                 <div class="code-block">
-<!-- // Exemplo básico: Piscar LED
-void setup() {
-  pinMode(13, OUTPUT);  // Configura pino 13 como saída
-}
+                    <pre>
+                        // Exemplo básico: Piscar LED
+                        void setup() {
+                          pinMode(13, OUTPUT);  // Configura pino 13 como saída
+                        }
+                        
+                        void loop() {
+                          digitalWrite(13, HIGH);  // Liga LED
+                          delay(1000);            // Espera 1 segundo
+                          digitalWrite(13, LOW);   // Desliga LED
+                          delay(1000);            // Espera 1 segundo
+                        }
+                    </pre>
 
-void loop() {
-  digitalWrite(13, HIGH);  // Liga LED
-  delay(1000);            // Espera 1 segundo
-  digitalWrite(13, LOW);   // Desliga LED
-  delay(1000);            // Espera 1 segundo
-} -->
                 </div>
             </div>
 
@@ -479,23 +497,26 @@ void loop() {
             <div class="card">
                 <p>A Lei de Ohm estabelece que V = I × R, onde V é tensão (Volts), I é corrente (Ampères) e R é resistência (Ohms).</p>
                 <div class="code-block">
-<!-- // Calculadora Lei de Ohm
-function calcularTensao(corrente, resistencia) {
-    return corrente * resistencia;
-}
-
-function calcularCorrente(tensao, resistencia) {
-    return tensao / resistencia;
-}
-
-function calcularResistencia(tensao, corrente) {
-    return tensao / corrente;
-}
-
-// Exemplos
-console.log("Tensão (2A, 10Ω):", calcularTensao(2, 10) + "V");
-console.log("Corrente (12V, 4Ω):", calcularCorrente(12, 4) + "A");
-console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω"); -->
+                    <pre>
+                        Calculadora Lei de Ohm
+                        function calcularTensao(corrente, resistencia) {
+                            return corrente * resistencia;
+                        }
+                        
+                        function calcularCorrente(tensao, resistencia) {
+                            return tensao / resistencia;
+                        }
+                        
+                        function calcularResistencia(tensao, corrente) {
+                            return tensao / corrente;
+                        }
+                        
+                         
+                        console.log("Tensão (2A, 10Ω):", calcularTensao(2, 10) + "V");
+                        console.log("Corrente (12V, 4Ω):", calcularCorrente(12, 4) + "A");
+                        console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω");
+                    </pre>
+ 
                 </div>
             </div>
 
@@ -503,23 +524,26 @@ console.log("Resistência (9V, 3A):", calcularResistencia(9, 3) + "Ω"); -->
             <div class="card">
                 <p>Potência elétrica pode ser calculada usando P = V × I, P = V²/R ou P = I² × R</p>
                 <div class="code-block">
-<!-- // Calculadora de Potência
- function potenciaTensaoCorrente(tensao, corrente) {
-    return tensao * corrente;
-}
+                    <pre>
+                        Calculadora de Potência
+                        function potenciaTensaoCorrente(tensao, corrente) {
+                           return tensao * corrente;
+                       }
+                       
+                       function potenciaTensaoResistencia(tensao, resistencia) {
+                           return (tensao * tensao) / resistencia;
+                       }
+                       
+                       function potenciaCorrenteResistencia(corrente, resistencia) {
+                           return corrente * corrente * resistencia;
+                       }
+                       
+                       // Exemplo: Lâmpada de 12V, 2A
+                       let tensao = 12, corrente = 2;
+                       console.log("Potência:", potenciaTensaoCorrente(tensao, corrente) + "W");
+                    </pre>
 
-function potenciaTensaoResistencia(tensao, resistencia) {
-    return (tensao * tensao) / resistencia;
-}
-
-function potenciaCorrenteResistencia(corrente, resistencia) {
-    return corrente * corrente * resistencia;
-}
-
-// Exemplo: Lâmpada de 12V, 2A
-let tensao = 12, corrente = 2;
-console.log("Potência:", potenciaTensaoCorrente(tensao, corrente) + "W");
-                </div> --> 
+                </div> 
             </div>
 
             <h3>Programa Arduino - Leitura de Sensor Analógico</h3>
@@ -558,9 +582,24 @@ console.log("Potência:", potenciaTensaoCorrente(tensao, corrente) + "W");
             </div>
         </section>
 
+        <!-- REDES -->
+        <section id="redes" class="section">
+            <h1>Fundamentos de Redes</h1>
+
+            <h2>O que são Redes de Computadores?</h2>
+            <div class="card"></div>
+        </section>
+
+
+
+
+
+
         <!-- CONTATO -->
-        <section id="contact" class="section">
+        <section id="contato" class="section">  <!-- vai pegar o id da sessão e vai mostrar na tela -->
+           
             <h1>Entre em Contato</h1>
+
             <div class="hero" style="margin: 0 0 3rem 0;">
                 <h2 style="color: white; font-size: 2rem;"></h2>
                 <p></p>
