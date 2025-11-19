@@ -80,14 +80,14 @@ main {
     display: block;
 }
 
-.section h1 {
+.section h1 { /* titulos medios */
     color: #000000;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.section h2 {
+.section h2 { /* titulos grandes*/
     color: #000000;
     font-size: 1.8rem;
     margin: 2rem 0 1rem 0;
@@ -95,7 +95,7 @@ main {
     padding-bottom: 0.5rem;
 }
 
-.section h3 {
+.section h3 { /* titulos pequenos*/
     color: #333;
     font-size: 1.4rem;
     margin: 1.5rem 0 1rem 0;
@@ -175,6 +175,7 @@ main {
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
+/* calculadora*/
 #calculadora {
     width: 300px;
     margin: 50px auto;
