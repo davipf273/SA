@@ -5,19 +5,19 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"defer></script>
     <script src="./calculadora.js"defer></script>
-    <title> Situação de Aprendizagem - Desenvolvimento de Sistemas</title>
+    <title> Fagunde's - Desenvolvimento de Sistemas</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="#" class="logo" onclick="showSection('home')">Situação de Aprendizagem</a>
+            <a href="#" class="logo" onclick="showSection('home')">Fagunde's</a>
             <ul class="nav-links">
                 <li><a onclick="showSection('home')">Home</a></li>
                 <li><a onclick="showSection('servicos')">Serviços</a></li>
                 <li><a onclick="showSection('algoritmos')">Algoritmos</a></li>
                 <li><a onclick="showSection('eletronica')">Eletrônica</a></li>
-                <li><a onclick="showSection('contato')">Contato</a></li>
                 <li><a onclick="showSection('redes')">Redes</a></li>
+                <li><a onclick="showSection('contato')">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
         <!-- HOME -->
         <section id="home" class="section active"> <!-- vai pegar o id da sessão e vai mostrar na tela -->
             <div class="hero">
-                <h1>Situação de Aprendizagem</h1>
+                <h1>Fagunde's</h1>
                 <p>Soluções completas em Desenvolvimento de Sistemas e Tecnologia</p>
                 <a href="#" class="btn" onclick="showSection('servicos')">Conheça nossos serviços</a>
             </div>
@@ -56,23 +56,27 @@
                 <div class="card">
                     <h4>C++</h4>
                     <p>Linguagem de programação de alto desempenho, ideal para sistemas embarcados, jogos e aplicações que exigem velocidade máxima. Oferece controle total sobre hardware e memória.</p>
-                    <img src="./img/c++.webp" alt="">
+                    <img src="./img/c++.png" alt="">
                 </div>
                 <div class="card">
                     <h4>JavaScript</h4>
                     <p>Linguagem essencial para desenvolvimento web, tanto frontend quanto backend (Node.js). Permite criar interfaces interativas e aplicações web modernas e responsivas.</p>
+                    <img src="./img/js.png" alt="">
                 </div>
                 <div class="card">
                     <h4>Java</h4>
                     <p>Linguagem robusta e multiplataforma, perfeita para aplicações empresariais, sistemas distribuídos e desenvolvimento Android. "Write once, run anywhere".</p>
+                    <img src="./img/java.jpeg" alt="">
                 </div>
                 <div class="card">
                     <h4>Python</h4>
                     <p>Linguagem versátil e de fácil aprendizado, excelente para ciência de dados, inteligência artificial, automação e desenvolvimento web rápido.</p>
+                    <img src="./img/python.jpeg" alt="">
                 </div>
                 <div class="card">
                     <h4>PHP</h4>
-                    <p>Linguagem especializada em desenvolvimento web backend, ideal para sites dinâmicos, sistemas de gerenciamento de conteúdo e e-commerce.</p>
+                    <p>Linguagem especializada em desenvolvimento web backend, ideal para sites dinâmicos, sistemas de gerenciamento de conteúdo e e-commerce.</p> 
+                    <img src="./img/php.png" alt="">
                 </div>
             </div>
 
@@ -549,10 +553,10 @@
                 </div> 
             </div>
 
-            <h3>Programa Arduino - Leitura de Sensor Analógico</h3>
+            <h3>Programa Arduino Ligar led</h3>
             <div class="card">
                 <div class="code-block">
-
+                <img src="./img/arduino.jpg" alt=""> <img src="./img/codigo_ar.png" alt="">
                 </div>
             </div>
 
@@ -588,9 +592,88 @@
         <!-- REDES -->
         <section id="redes" class="section">
             <h1>Fundamentos de Redes</h1>
+<li>Switch (opcional, para rede cabeada interna)</li>
+</ul>
+</div>
 
-            <h2>O que são Redes de Computadores?</h2>
-            <div class="card"></div>
+
+<div class="card">
+<h3>Componentes de uma rede local com cabo</h3>
+<ul>
+<li>Switch</li>
+<li>Roteador</li>
+<li>Cabo Ethernet (Cat5e/Cat6)</li>
+<li>Patch panel (em infraestrutura maior)</li>
+</ul>
+</div>
+
+
+<div class="card">
+<h3>Protocolos e modelos</h3>
+<p><strong>Protocolo:</strong> conjunto de regras para comunicação (ex.: IP, TCP, UDP, HTTP).</p>
+<p><strong>Modelo OSI:</strong> 7 camadas — Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação.</p>
+<p><strong>Modelo TCP/IP:</strong> 4 camadas — Link, Internet, Transporte, Aplicação.</p>
+</div>
+
+
+<div class="card">
+<h3>IPv4 vs IPv6</h3>
+<p>IPv4: endereços 32 bits (~4,3 bilhões). IPv6: endereços 128 bits (praticamente ilimitado), melhora roteamento e segurança em alguns pontos.</p>
+</div>
+
+
+<div class="card">
+<h3>HTTP e HTTPS</h3>
+<p>HTTP é protocolo de aplicação para web. HTTPS = HTTP sobre TLS/SSL (criptografia e integridade).</p>
+</div>
+
+
+<div class="card">
+<h3>Exemplo de configuração IP/TCP em backend Node.js</h3>
+<pre><code>// Exemplo Node.js (Express) — endpoint simples
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+
+app.post('/mensagem', (req, res) => {
+const body = req.body;
+console.log('Recebido:', body);
+res.json({status:'ok', recebido: body});
+});
+
+
+app.listen(3000, () => console.log('API rodando em http://localhost:3000'));
+</code></pre>
+<p class="small">Em backend não "configura-se" IP/TCP diretamente no código — o sistema operacional e o ambiente de rede fornecem as informações. O código apenas abre uma porta para aceitar conexões.</p>
+</div>
+
+
+<div class="card">
+<h3>Frameworks Node.js para HTTP</h3>
+<ul>
+<li>Express — o mais popular e minimalista</li>
+<li>Fastify — foco em performance</li>
+<li>Koa — middleware moderno</li>
+</ul>
+
+
+<h4>3 exemplos Backend ↔ Frontend</h4>
+<pre><code>// 1) GET simples
+app.get('/ping', (req,res)=> res.send('pong'));
+
+
+// 2) POST que recebe JSON
+app.post('/login', (req,res)=>{ const u = req.body.user; res.json({token:'abc123', user:u}); });
+
+
+// 3) Endpoint que lista dados (simulado)
+app.get('/alunos', (req,res)=> res.json([{id:1,nome:'Davi'},{id:2,nome:'Maria'}]));
+</code></pre>
+</div>
+
+
+</section>
         </section>
 
 
@@ -634,7 +717,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Situação de Aprendizagem</div>
+                <div class="footer-logo">Fagunde's</div>
                 <p>&copy; Davi </p>
             </div>
         </div>
